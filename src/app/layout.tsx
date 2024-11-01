@@ -1,3 +1,5 @@
+// layouts
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -28,7 +30,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header style={{ backgroundColor: 'lightblue', padding: '1rem' }}>
+          <p>Header</p>
+        </header>
         {children}
+        <footer style={{ backgroundColor: 'lightgreen', padding: '1rem' }}>
+          <p>Footer</p>
+        </footer>
       </body>
     </html>
   );
